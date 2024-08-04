@@ -1,0 +1,34 @@
+A Program to demonstrate the the use of @Primary annotation:
+Programs:
+* OfflinePayment.java
+* OnlinePayment.java
+* Payment.java
+* Product.java
+* sales.java
+* AppConfig.java
+* Test.java
+Note:
+* @Primary annotation is used to give the preference to bean when multiple beans are eligible to autowire a single dependency.
+* @Primary annotation is similar to the <bean> tag primary attribute in Xml configuration. 
+* @Primary annotation can be used at class and method level.
+* This annotation is mainly used to resolve the 'org.springframework.beans.factory.NoUniqueBeanDefinitionException' Exception.
+* If we add @Primary annotation to multiple bean class then no use of @Primary annotation.
+Output:
+-------- Beans Names -----------
+org.springframework.context.annotation.internalConfigurationAnnotationProcessor
+org.springframework.context.annotation.internalAutowiredAnnotationProcessor
+org.springframework.context.annotation.internalCommonAnnotationProcessor
+org.springframework.context.event.internalEventListenerProcessor
+org.springframework.context.event.internalEventListenerFactory
+appConfig
+offlinePayment
+onlinePayment
+sales
+iphone
+mi
+samsung
+oneplus
+------- Product Details ----------
+Product [productName=Mi-Y2, quantity=12, price=25000.0, vendor=Xiomi]
+------- Payment Details ----------
+Payment mode is: Online
