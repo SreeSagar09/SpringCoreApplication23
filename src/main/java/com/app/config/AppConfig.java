@@ -22,7 +22,7 @@ public class AppConfig {
 	}
 	
 	@Bean
-	@Primary
+	@Primary //Using Primary annotation at method level
 	public Product mi() {
 		Product product = new Product();
 		product.setProductName("Mi-Y2");
